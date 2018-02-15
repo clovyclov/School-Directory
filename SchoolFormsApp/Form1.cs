@@ -11,18 +11,30 @@ using System.Windows.Forms;
 
 namespace SchoolFormsApp
 {
-    public partial class txtCity : Form
+    public partial class Form1 : Form
     {
-        public txtCity()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        var test = new SchoolLibrary.School();
-
         private void btn_pushToTest_Click(object sender, EventArgs e)
         {
-
+            var testSchool = new SchoolLibrary.School();
+            testSchool.Name = txtName.Text;
+            testSchool.Address = txtAddress.Text;
+            testSchool.City = txtCity.Text;
+            testSchool.Zip = txtZip.Text;
+            testSchool.PhoneNumber = txtPhone.Text;
+            try
+            {
+                testSchool.TwitterAddress = txtTwitter.Text;
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
+        
     }
 }

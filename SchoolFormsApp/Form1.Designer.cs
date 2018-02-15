@@ -1,6 +1,6 @@
 ﻿namespace SchoolFormsApp
 {
-    partial class txtCity
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -33,7 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtState = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -86,12 +86,12 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "City";
             // 
-            // textBox3
+            // txtCity
             // 
-            this.textBox3.Location = new System.Drawing.Point(300, 172);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(255, 20);
-            this.textBox3.TabIndex = 1;
+            this.txtCity.Location = new System.Drawing.Point(300, 172);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(255, 20);
+            this.txtCity.TabIndex = 1;
             // 
             // label4
             // 
@@ -167,7 +167,7 @@
             this.btn_pushToTest.UseVisualStyleBackColor = true;
             this.btn_pushToTest.Click += new System.EventHandler(this.btn_pushToTest_Click);
             // 
-            // txtCity
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -181,13 +181,13 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtState);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtCity);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label1);
-            this.Name = "txtCity";
+            this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -201,7 +201,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtState;
         private System.Windows.Forms.Label label5;
