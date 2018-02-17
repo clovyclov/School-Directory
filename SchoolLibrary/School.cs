@@ -41,12 +41,6 @@ namespace SchoolLibrary
             PhoneNumber = SchoolPhoneNumber;
         }
 
-        //public float AverageThreeScores(float a, float b, float c)
-        //{
-        //    var result = (a + b + c) / 3;
-        //    return result;
-        //}
-
         public static float AverageThreeScores(float a, float b, float c) => (a + b + c) / 3;
         public static int AverageThreeScores(int a, int b, int c)
         {
@@ -59,7 +53,7 @@ namespace SchoolLibrary
             var sb = new StringBuilder();
             sb.AppendLine(Name);
             sb.AppendLine(Address);
-            sb.AppendLine(City);
+            sb.Append(City);
             sb.Append(", ");
             sb.Append(State);
             sb.Append("  ");
